@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1 {
+  color: darkslategrey;
+}
+
+.certificate-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.certificate-card:hover,
+.certificate-card:focus {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.2);
+  outline: none;
+}
+
+.certificate-card img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.modal-content {
+  border-radius: 12px;
+}
+
+.modal-body img {
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.btn-close-white {
+  filter: invert(1);
+}
+
+@media (max-width: 576px) {
+  .certificate-card img {
+    max-height: 150px;
+  }
+}
